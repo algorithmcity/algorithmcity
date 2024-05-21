@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>Stat Functions | Unix</title>
+        <link rel="shortcut icon" href="../../../assets/img/favicon.ico">
+
+        <link rel="stylesheet" href="../../../assets/css/google-font.css">
+
+        <link rel="stylesheet" href="../../../assets/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../../../assets/vendor/highlight/highlight.css">
+        <link rel="stylesheet" href="../../../assets/vendor/highlight/ayu-highlight.css">
+        
+
+        <link rel="stylesheet" href="../../../assets/css/algorithmcity.css">
+
+        <link rel="stylesheet" href="../../../assets/css/custom.css">
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header id="header" class="navbar navbar-expand-lg navbar-box-shadow">
+            <div class="container">
+                <nav class="navbar-nav-wrap">
+                    <!-- Default Logo -->
+                    <a class="navbar-brand d-flex align-items-center" href="../../../index.html" aria-label="Algorithmcity">
+                        <img src="../../../assets/img/logo/logo-algorithmcity.png" width="30" height="30" alt="Logo">
+                        <span class="navbar-brand-text ms-2">Algorithmcity</span>
+                    </a>
+                    <!-- End Default Logo -->
+
+                    <!-- Navbar Toggler -->
+                    <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
+                            aria-expanded="false"
+                            aria-controls="navBar"
+                            aria-label="Toggle navigation"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navBar">
+                        <span class="navbar-toggler-default">
+                            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+                            </svg>
+                        </span>
+                        <span class="navbar-toggler-toggled">
+                            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+                            </svg>
+                        </span>
+                    </button>
+                            
+                    <!-- End Navbar Toggler -->
+
+                    <div id="navBar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav nav-pills me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../themes/theme-listing.html">Themes</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../courses/course-listing.html">Courses</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../bookstore/book-listing.html">Bookstore</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../big-data/index.html">Big Data</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../../algorithms/index.html">Algorithms</a>
+                            </li>
+
+                            <li class="nav-item ms-lg-auto">
+                                <a class="btn btn-primary text-white" href="../../../hire-us.html">Hire Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="btn btn-link btn-pointer" href="../../../index.html#contact-us">Contact us</a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Main -->
+        <main id="content" role="main">
+
+            <!-- Navigation Menu -->
+            <div class="bg-light border-bottom">
+                <div class="container py-1">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-white border" 
+                                aria-expanded="false"
+                                aria-controls="navMenu"
+                                data-bs-target="#navMenu"
+                                data-bs-toggle="offcanvas">
+                            Nav Menu 
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Navigation Menu -->
+            
+            <!-- Breadcrumb -->
+            <div class="container pt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb small">
+                        <li class="breadcrumb-item">
+                            <a href="../../../courses/course-listing.html">Learn</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="../../../courses/unix/index.html">Unix</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            File System
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- End Breadcrumb -->
+
+            <!-- Previous Next-->
+            <div class="container space-t-1">
+                <div class="d-flex justify-content-between">
+                    <a class="btn btn-white border disabled" href="file-types.html">
+                        <i class="bi bi-arrow-left me-1"></i>
+                        Prev
+                    </a>
+                    <a class="btn btn-white border" href="set-user-group-id.html">
+                        Next
+                        <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- End Previous Next -->
+            <!-- Content -->
+            <div class="container space-2">
+                <div class="mb-9 pb-4 border-bottom">
+                    <h1>File System</h1>
+                    <p class="lead">The UNIX file system, </p>
+                </div>
+                
+                
+                
+            </div>
+            <!-- End Content -->
+        </main>
+        <!-- End Main -->
+
+        <!-- Navigation Menu -->
+        <div id="navMenu" class="offcanvas offcanvas-start" tabindex="-1" style="width: 18rem;">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="../../../index.html" aria-label="Algorithmcity">
+                    <img src="../../../assets/img/logo/logo-algorithmcity.png" width="40" height="40" alt="Logo">
+                </a>
+                <button type="button" class="btn btn-white btn-sm rounded-circle" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="bi bi-arrow-bar-left fs-4"></i>
+                </button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav nav nav-vertical">
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduction.html">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file-types.html">File Types</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fil-access-permissions.html">File Access Permissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file-ownership.html">File Ownership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="stat-functions.html">Stat Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="set-user-group-id.html">Set User and Group ID</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="access-functions.html">Access Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="unmask-function.html">Unmask Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chmod-functions.html">Chmod Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chown-function.html">Chown Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file-truncation.html">File Truncation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="link-functions.html">Link Function</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rename-functions.html">Rename Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="symbolic-links.html">Symbolic Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="futimens-functions.html">Futimens Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mkdir-functions.html">Mkdir Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reading-directories.html">Reading Directories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chdir-functions.html">Chdir Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="device-files.html">Device Files</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Navigation Menu -->
+
+        <script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="../../../assets/vendor/highlight/highlight.js"></script>
+    </body>
+</html>
